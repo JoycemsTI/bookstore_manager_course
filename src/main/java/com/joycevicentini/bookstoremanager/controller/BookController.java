@@ -1,16 +1,11 @@
-package com.rodrigopeleias.bookstoremanager.controller;
+package com.joycevicentini.bookstoremanager.controller;
 
-import com.rodrigopeleias.bookstoremanager.dto.BookDTO;
-import com.rodrigopeleias.bookstoremanager.dto.MessageResponseDTO;
-import com.rodrigopeleias.bookstoremanager.exception.BookNotFoundException;
-import com.rodrigopeleias.bookstoremanager.service.BookService;
+import com.joycevicentini.bookstoremanager.dto.BookDTO;
+import com.joycevicentini.bookstoremanager.dto.MessageResponseDTO;
+import com.joycevicentini.bookstoremanager.exception.BookNotFoundException;
+import com.joycevicentini.bookstoremanager.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 

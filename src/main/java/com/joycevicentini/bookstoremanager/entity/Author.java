@@ -1,4 +1,4 @@
-package com.rodrigopeleias.bookstoremanager.entity;
+package com.joycevicentini.bookstoremanager.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import javax.persistence.*;
 
 @Entity
 @Data

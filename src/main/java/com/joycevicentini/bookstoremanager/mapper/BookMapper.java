@@ -1,7 +1,7 @@
-package com.rodrigopeleias.bookstoremanager.mapper;
+package com.joycevicentini.bookstoremanager.mapper;
 
-import com.rodrigopeleias.bookstoremanager.dto.BookDTO;
-import com.rodrigopeleias.bookstoremanager.entity.Book;
+import com.joycevicentini.bookstoremanager.dto.BookDTO;
+import com.joycevicentini.bookstoremanager.entity.Book;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

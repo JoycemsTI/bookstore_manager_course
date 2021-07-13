@@ -1,4 +1,4 @@
-package com.rodrigopeleias.bookstoremanager.exception;
+package com.joycevicentini.bookstoremanager.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

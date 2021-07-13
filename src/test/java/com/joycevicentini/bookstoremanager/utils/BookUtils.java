@@ -1,16 +1,14 @@
-package com.rodrigopeleias.bookstoremanager.utils;
+package com.joycevicentini.bookstoremanager.utils;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.github.javafaker.Faker;
-import com.rodrigopeleias.bookstoremanager.dto.BookDTO;
-import com.rodrigopeleias.bookstoremanager.entity.Book;
+import com.joycevicentini.bookstoremanager.dto.BookDTO;
+import com.joycevicentini.bookstoremanager.entity.Book;
 
-import static com.rodrigopeleias.bookstoremanager.utils.AuthorUtils.createFakeAuthor;
-import static com.rodrigopeleias.bookstoremanager.utils.AuthorUtils.createFakeAuthorDTO;
-import static com.rodrigopeleias.bookstoremanager.utils.AuthorUtils.createFakeAuthorFrom;
+import static com.joycevicentini.bookstoremanager.utils.AuthorUtils.*;
 
 public class BookUtils {
 

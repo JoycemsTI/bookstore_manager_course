@@ -1,8 +1,8 @@
-package com.rodrigopeleias.bookstoremanager.controller;
+package com.joycevicentini.bookstoremanager.controller;
 
-import com.rodrigopeleias.bookstoremanager.dto.BookDTO;
-import com.rodrigopeleias.bookstoremanager.dto.MessageResponseDTO;
-import com.rodrigopeleias.bookstoremanager.service.BookService;
+import com.joycevicentini.bookstoremanager.dto.BookDTO;
+import com.joycevicentini.bookstoremanager.dto.MessageResponseDTO;
+import com.joycevicentini.bookstoremanager.service.BookService;
 import org.hamcrest.core.Is;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,14 +13,15 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
-import static com.rodrigopeleias.bookstoremanager.utils.BookUtils.asJsonString;
-import static com.rodrigopeleias.bookstoremanager.utils.BookUtils.createFakeBookDTO;
+import static com.joycevicentini.bookstoremanager.utils.BookUtils.asJsonString;
+import static com.joycevicentini.bookstoremanager.utils.BookUtils.createFakeBookDTO;
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.client.match.MockRestRequestMatchers.jsonPath;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(MockitoExtension.class)
@@ -56,7 +57,7 @@ public class BookControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(asJsonString(bookDTO)))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.message", Is.is(expectedMessageResponse.getMessage())));
+                .andExpect((ResultMatcher) jsonPath("$.message", Is.is(expectedMessageResponse.getMessage())));
     }
 
     @Test

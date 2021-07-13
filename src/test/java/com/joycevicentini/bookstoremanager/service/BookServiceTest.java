@@ -1,23 +1,23 @@
-package com.rodrigopeleias.bookstoremanager.service;
+package com.joycevicentini.bookstoremanager.service;
 
-import com.rodrigopeleias.bookstoremanager.dto.BookDTO;
-import com.rodrigopeleias.bookstoremanager.entity.Book;
-import com.rodrigopeleias.bookstoremanager.exception.BookNotFoundException;
-import com.rodrigopeleias.bookstoremanager.repository.BookRepository;
-import com.rodrigopeleias.bookstoremanager.utils.BookUtils;
-import org.junit.jupiter.api.Assertions;
+import com.joycevicentini.bookstoremanager.dto.BookDTO;
+import com.joycevicentini.bookstoremanager.entity.Book;
+import com.joycevicentini.bookstoremanager.exception.BookNotFoundException;
+import com.joycevicentini.bookstoremanager.repository.BookRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Optional;
 
-import static com.rodrigopeleias.bookstoremanager.utils.BookUtils.*;
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static com.joycevicentini.bookstoremanager.utils.BookUtils.*;
+import static com.joycevicentini.bookstoremanager.utils.BookUtils.createFakeBook;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 public class BookServiceTest {

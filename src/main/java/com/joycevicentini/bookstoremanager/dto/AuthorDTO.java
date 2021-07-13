@@ -1,4 +1,4 @@
-package com.rodrigopeleias.bookstoremanager.dto;
+package com.joycevicentini.bookstoremanager.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

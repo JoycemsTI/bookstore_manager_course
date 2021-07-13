@@ -1,6 +1,6 @@
-package com.rodrigopeleias.bookstoremanager.repository;
+package com.joycevicentini.bookstoremanager.repository;
 
-import com.rodrigopeleias.bookstoremanager.entity.Book;
+import com.joycevicentini.bookstoremanager.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BookRepository extends JpaRepository<Book, Long> {
