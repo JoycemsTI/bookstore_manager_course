@@ -38,16 +38,3 @@ São necessários os seguintes pré-requisitos para a execução do projeto dese
 * Conta no GitHub para o armazenamento do seu projeto na nuvem.
 * Conta no Heroku para o deploy do projeto na nuvem
 * Postman para execução de testes de integração para a validação de ponta a ponta da API.
-
-Abaixo, segue o link do projeto implantado no Heroku:
- 
-```
-https://bookapi-course.herokuapp.com/swagger-ui.html
-```
-
-O link da documentação no Heroku, implementada também atraves do Swagger, está no link abaixo:
- 
-```
-https://bookapi-course.herokuapp.com/swagger-ui.html
-```
-
